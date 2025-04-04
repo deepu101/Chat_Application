@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Chat App</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 col-lg-2 sidebar">
+                <div class="user-profile">
+                    <img src="https://i.pravatar.cc/150?img=12" alt="Profile" class="profile-img">
+                    <h5 class="username">Your Name</h5>
+                    <span class="status online">Online</span>
+                </div>
+                <div class="search-box">
+                    <input type="text" class="form-control" placeholder="Search contacts...">
+                </div>
+                <div class="contacts-list">
+                    <!-- Contacts will be dynamically added here -->
+                </div>
+            </div>
+
+            <!-- Main Chat Area -->
+            <div class="col-md-9 col-lg-10 main-chat">
+                <div class="chat-header">
+                    <div class="chat-user-info">
+                        <img src="https://via.placeholder.com/40" alt="Contact" class="contact-img">
+                        <div>
+                            <h5 class="contact-name">Select a contact</h5>
+                            <span class="contact-status">Click on a contact to start chatting</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-messages">
+                    <!-- Messages will be dynamically added here -->
+                </div>
+                <div class="chat-input">
+                    <form id="message-form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="message-input" placeholder="Type a message...">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html> 
